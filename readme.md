@@ -118,3 +118,4 @@ Detail code in jupyter notebook.
 ### consider the crop strategy in training may loss many sence info when the resolution is high, so i resize the video to the training setting(512x512,256x256) use ffmpeg first.
 
 ### use miniCPM_v2.6 to caption videos, detail in cpm_caption.py.
+[miniCPM_v2.6](https://modelscope.cn/models/OpenBMB/MiniCPM-V-2_6)
