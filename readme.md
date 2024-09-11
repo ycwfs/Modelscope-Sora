@@ -1,4 +1,5 @@
 # Modelscope_Sora挑战赛第三名的解决方案
+
 # CUPES-IAIS scheme
 
 ## DATA ANALYSIS
@@ -62,7 +63,7 @@
       #hf_nsfw_model: Falconsai/nsfw_image_detection           # Huggingface model name for nsfw classification
       score_threshold: 0.4                           # the nsfw score threshold for samples, range from 0 to 1
       frame_sampling_method: all_keyframes                    # sampling method of extracting frame images from the videos. Should be one of ["all_keyframes", "uniform"]. The former one extracts all key frames and the latter one extract specified number of frames uniformly from the video. Default: "all_keyframes".
-      frame_num: 3                                        
+      frame_num: 3                                      
       reduce_mode: avg                                        # reduce mode for multiple sampled video frames to compute nsfw scores of videos, must be one of ['avg','max', 'min'].
       any_or_all: all                                         # keep this sample when any/all images meet the filter condition
   - video_motion_score_filter:                              # Keep samples with video motion scores within a specific range.
@@ -79,7 +80,7 @@ Datail code in split.sh, split.py.
 
 ### Use gpt4o-mini api to caption
 
-include a fewer base64 encoded frames and prompt. 6000 videos cost 18$
+include a fewer base64 encoded frames and prompt. 6000 videos cost 18$.
 Detail code in jupyter notebook.
 
 ### Improvement points
@@ -115,7 +116,8 @@ Detail code in jupyter notebook.
 
 ### filter videos as same as preliminary, get 100k videos.
 
-### consider the crop strategy in training may loss many sence info when the resolution is high, so i resize the video to the training setting(512x512,256x256) use ffmpeg first.
+### consider the crop strategy in training may loss many sence info when the resolution is high, so i resize the video to the training setting(512x512,256x256) use ffmpeg first. 
 
 ### use miniCPM_v2.6 to caption videos, detail in cpm_caption.py.
+
 [miniCPM_v2.6](https://modelscope.cn/models/OpenBMB/MiniCPM-V-2_6)
