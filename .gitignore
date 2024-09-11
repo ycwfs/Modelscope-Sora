@@ -4,6 +4,9 @@ __pycache__
 .git_tmp
 .git_temp
 
+download.sh
+install.sh
+
 toolkit/training/pretrained_models/Diffusion_Transformer/*
 toolkit/training/pretrained_models/Motion_Module/*
 toolkit/evaluation/vbench_models.tar.gz

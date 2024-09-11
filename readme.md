@@ -1,5 +1,5 @@
 # Modelscope_Sora挑战赛第三名的解决方案
-
+[github](https://github.com/ycwfs/Modelscope-Sora)
 # CUPES-IAIS scheme
 
 ## DATA ANALYSIS
